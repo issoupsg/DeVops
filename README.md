@@ -81,20 +81,14 @@ Exécutez l'application :
     ```bash
     kubectl get services
 
-3. Tester l'Application
+Tester l'Application
+1. Tests unitaires
+- Exécuter des tests unitaires en utilisant :
+    ```bash
+    pytest test/unit
 
-
-
-
-
-
-
-
-
-
-
-
-
+2. Tests API
+- 
 ### Pré-requis
 
 - **Docker** : [Installer Docker](https://www.docker.com/get-started)
