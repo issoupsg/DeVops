@@ -32,6 +32,24 @@ Toutes les captures d'écran montrant l'application en action (interface utilisa
 
 ## Instructions d'Installation
 
+Installation/configuration de l'environnement
+1. Cloner ce dépôt :
+   ```bash
+   git clone https://github.com/your-repo/devops-project.git
+   cd devops-project
+   
+2. Installer les dépendances :
+   ```bash
+   pip install -r requirements.txt
+
+3. VM Vagrant Configuration :
+- installer Vagrant et Ansible.
+- Lancer le VM :
+   ```bash
+   Vagrant VM Setup
+- Provisionnez la VM avec les playbooks Ansible :
+   ```bash
+   ansible-playbook playbooks/setup.yml
 ### Pré-requis
 
 - **Docker** : [Installer Docker](https://www.docker.com/get-started)
