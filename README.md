@@ -50,15 +50,50 @@ Installation/configuration de l'environnement
 - Provisionnez la VM avec les playbooks Ansible :
    ```bash
    ansible-playbook playbooks/setup.yml
+
+Exécutez l'application :
+1. Docker
+- Construire l'image Docker
+    ```bash
+    docker build -t userapi
+- lancer le Docker container :
+    ```bash
+    docker run -p 5000:5000 userapi
+    
+2. Docker Composer
+- lancer les services :
+    ```bash
+    docker-compose up
+- Accédez à l'API sur http://localhost:5000
+
+3. Kubernetes
+- Commencer Minikube :
+    ```bash
+    minikube start
+- Appliquez les manifestes Kubernetes :
+    ```bash
+    kubectl apply -f k8s/deployment.yaml
+
+- Vérifier les services :
+    ```bash
+    kubectl get services
+
+3. Tester l'Application
+
+
+
+
+
+
+
+
+
+
+
+
 ### Pré-requis
 
 - **Docker** : [Installer Docker](https://www.docker.com/get-started)
 - **Redis** : [Installer Redis](https://redis.io/)
 - **Node.js** (si vous utilisez Node.js) : [Installer Node.js](https://nodejs.org/)
 - [Autres outils nécessaires selon votre choix de langage]
-
-### Étapes d'Installation
-
-1. Clonez ce dépôt :
-   ```bash
-   git clone https://github.com/votre-repo.git
