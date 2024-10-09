@@ -1,20 +1,27 @@
-# Application Web CRUD avec API Utilisateur et Tests Intégrés
+# DevOps Project - User API with Redis
 
-## Description
+## Project Overview
 
-Ce projet consiste à créer une application web API utilisateur avec des fonctionnalités CRUD, stockant les données dans une base de données Redis. Le projet est enrichi par divers tests (unitaires, API, de configuration et de connexion) et inclut un point d'accès de vérification de l'état (health check) pour garantir le bon fonctionnement de l'application.
+**Deadline:** December 31, 2024
+Ce projet est une application Web axée sur DevOps basée sur les laboratoires réalisés pendant le cours. Le projet couvre l'intégralité du cycle de vie DevOps, du développement au déploiement, en passant par la conteneurisation, l'orchestration et la surveillance. Les principaux composants comprennent :
 
-Cette application est basée sur un modèle de projet situé dans le dossier `courses/devops/modules/03.continuous-testing/lab`, avec des améliorations apportées à toutes les sections marquées "TODO".
+- Une application API utilisateur avec fonctionnalité CRUD.
+- Intégration de la base de données Redis pour le stockage.
+- Différents niveaux de tests, y compris les tests unitaires, API, de configuration et de connexion.
+- Point de terminaison de contrôle de santé pour garantir que l'application est fonctionnelle.
+
 
 ## Fonctionnalités Implémentées
 
-1. **API Utilisateur CRUD** : Création, lecture, mise à jour et suppression des utilisateurs via des requêtes HTTP.
-2. **Stockage Redis** : Utilisation de Redis pour la gestion des données utilisateur.
-3. **Tests** :
-   - Tests unitaires pour vérifier les fonctions individuelles.
-   - Tests API pour valider les requêtes HTTP.
-   - Tests de configuration et de connexion pour garantir le bon fonctionnement de l'application dans différents environnements.
-4. **Endpoint de vérification de l'état (Health Check)** : Un point d'accès dédié pour vérifier si l'application est opérationnelle.
+1. **API utilisateur avec opérations CRUD** : l'application permet la création, la lecture, la mise à jour et la suppression d'utilisateurs, stockés dans une base de données Redis.
+2. **Health Check Endpoint** : un point de terminaison dédié qui vérifie l'état de santé de l'application.
+3. **Tests complets** :
+    - Tests unitaires pour les fonctions individuelles.
+    - Tests API pour la vérification des points finaux.
+    - Tests de configuration et de connexion pour assurer une bonne intégration avec Redis.
+4. **Pipeline CI/CD** : implémenté à l'aide de plates-formes telles que GitHub Actions ou GitLab CI/CD, permettant des tests, une création et un déploiement automatisés.
+5. **Docker et Kubernetes** : l'application est conteneurisée avec Docker, orchestrée à l'aide de Docker Compose et déployée avec Kubernetes.
+6. **Surveillance** : Prometheus et Grafana sont intégrés au cluster Kubernetes pour la surveillance et les alertes en temps réel.
 
 ## Captures d'Écran
 
