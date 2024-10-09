@@ -51,6 +51,7 @@ Installation/configuration de l'environnement
    ```bash
    ansible-playbook playbooks/setup.yml
 
+
 Exécutez l'application :
 1. Docker
 - Construire l'image Docker
@@ -59,12 +60,14 @@ Exécutez l'application :
 - lancer le Docker container :
     ```bash
     docker run -p 5000:5000 userapi
+
     
 2. Docker Composer
 - lancer les services :
     ```bash
     docker-compose up
 - Accédez à l'API sur http://localhost:5000
+
 
 3. Kubernetes
 - Commencer Minikube :
@@ -79,6 +82,7 @@ Exécutez l'application :
     kubectl get services
 
 3. Tester l'Application
+
 
 
 
